@@ -1,13 +1,24 @@
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=418293438275399";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <% content_for :title do %>Teacher Notes<% end %>
 <% content_for :description do %>Website of Teacher Notes<% end %>
 <section>
-	<img src="http://lorempixel.com/1170/600/cats/1">
+	<div class="centerColumn">
+		<%= image_tag "TeacherNotesLogo.png" %>
+	</div>
 </section>
 <section>
-	<div class="column">
+	<div class="centerColumn">
 		<h2>Stay in touch.</h2>
 	</div>
-	<div class="column">
+	<div class="centerColumn">
 		<div class="form-centered">
 			<%= simple_form_for @visitor do |f| %>
 				<%= f.error_notification %>
@@ -18,3 +29,19 @@
 		</div>
 	</div>
 </section>
+<section>
+	<div class="centerColumn">
+		<%= link_to image_tag("AppleAppStoreBadge.png"), "https://itunes.apple.com/us/app/teacher-notes/id453648580" %>
+	</div>
+	<br/>
+</section>
+<section>
+	<div class="centerColumn">
+		<div class="fb-like" data-href="https://www.facebook.com/TeacherNotes" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+		<a href="https://twitter.com/teachernotes" class="twitter-follow-button" data-width="60px" data-show-count="false" data-lang="en">Follow @TeacherNotes</a>
+
+	</div>
+	<br/><br/>
+</section>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

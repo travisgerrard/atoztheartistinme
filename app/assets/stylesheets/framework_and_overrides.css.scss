@@ -17,13 +17,17 @@
   @extend .columns;
   }
 @mixin six-columns-centered {
-  @extend .small-6;
+  @extend .small-8;
   @extend .columns;
+  @extend .small-centered;
   @extend .text-center;
   }
 // create your own classes
 // to make views framework-neutral
-.column {
+.row {
+  @extend .row;
+}
+.centerColumn {
   @include six-columns-centered;
   }
 .form {
