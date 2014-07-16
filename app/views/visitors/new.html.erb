@@ -7,35 +7,19 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<% content_for :title do %>Teacher Notes<% end %>
-<% content_for :description do %>Website of Teacher Notes<% end %>
+<% content_for :title do %>A to Z The Artist in Me<% end %>
+<% content_for :description do %>Website of A to Z The Artist in Me<% end %>
 <section>
 	<div class="centerColumn">
-		<%= image_tag "TeacherNotesLogo.png" %>
+		<%= image_tag "AtoZLogo.png" %>
 	</div>
 </section>
 <section>
 	<div class="centerColumn">
 		<h3>Sign up for the Teacher Notes news letter and get updates on the latests happenings at Teacher Notes</h2>
 	</div>
-	<div class="centerColumn">
-		<div class="form-centered">
-			<%= simple_form_for @visitor do |f| %>
-				<%= f.error_notification %>
-				<%= f.input :email, label: false, :placeholder => 'Your email address...' %>
-				<br/>
-				<%= f.button :submit, "Sign up for the newsletter", :class => "submit" %>
-			<% end %>
-		</div>
-	</div>
 </section>
 
-<section>
-	<div class="centerColumn">
-		<ul style="list-style: none;"><li><%= link_to 'Get help by watching Teacher Notes videos made by expert users', page_path('help') %></li></ul>
-	</div>
-	<br/>
-</section>
 
 <section>
 	<div class="centerColumn">

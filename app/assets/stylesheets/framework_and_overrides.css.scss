@@ -4,11 +4,15 @@
 // override for the 'Home' navigation link
 .top-bar .name {
   font-size: rem-calc(13);
-  line-height: 45px; }
+  line-height: 45px;
+  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace; }
 .top-bar .name a {
   font-weight: normal;
   color: white;
   padding: 0 15px; }
+  .top-bar .right {
+      font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace; 
+  }
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create mixins using Foundation classes
@@ -45,7 +49,7 @@
 // to make views framework-neutral
 main {
   @include twelve-columns;
-  background-color: #eee;
+  background-color: #fff;
   }
 section {
   @extend .row;
